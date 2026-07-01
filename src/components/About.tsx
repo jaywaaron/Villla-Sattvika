@@ -29,7 +29,7 @@ interface SlidePhoto {
 
 const aboutSlides: SlidePhoto[][] = [
   [
-    { src: "/rooms/exterior-1.jpg", alt: "Twilight view of Villa Sattvika's private pool and teak deck" },
+    { src: "/rooms/exterior-1.jpg", alt: "Twilight view of Villa Sattvika &apos; s private pool and teak deck" },
     { src: "/rooms/living-2.jpg", alt: "Kitchen and dining pavilion with teak furnishings" },
   ],
   [
@@ -140,8 +140,8 @@ export default function About() {
             <div className="flex flex-col gap-5">
               <p className="section-body">
                 Located in the quiet lanes of Kerobokan Kelod, Villa Sattvika is a peaceful
-                retreat spot just minutes from Batu Belig Beach, Seminyak's dining scene,
-                and Canggu's surf breaks. The villa takes you back to the simple things
+                retreat spot just minutes from Batu Belig Beach, Seminyak&apos;s dining scene,
+                and Canggu&apos;s surf breaks. The villa takes you back to the simple things
                 in life. A morning swim, a sunset drink, and nature itself as your backdrop
               </p>
               <p className="section-body">

@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-forest: #2D4A35;
+  --color-sage: #5A8B67;
+  --color-terracotta: #B8956A;
+  --color-pool: #6BBFB8;
+  --color-cream: #FAF8F4;
+  --color-charcoal: #3A3530;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream text-charcoal antialiased;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  ::selection {
+    @apply bg-sage-pale text-forest-dark;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-cream-warm;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-sage rounded-full;
+  }
+}
+
+@layer components {
+  .section-label {
+    @apply font-label text-xs tracking-[0.3em] uppercase text-terracotta font-semibold;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl lg:text-6xl font-normal text-charcoal-dark leading-tight;
+  }
+
+  .section-body {
+    @apply font-sans text-base md:text-lg text-charcoal-light leading-relaxed font-normal;
+  }
+
+  .btn-primary {
+    @apply inline-block bg-forest text-cream font-label text-xs tracking-[0.2em] uppercase px-8 py-4
+           transition-all duration-300 ease-luxury hover:bg-forest-light hover:-translate-y-0.5
+           hover:shadow-lg hover:shadow-forest/20;
+  }
+
+  .btn-outline {
+    @apply inline-block border border-current text-forest font-label text-xs tracking-[0.2em] uppercase
+           px-8 py-4 transition-all duration-300 ease-luxury hover:bg-forest hover:text-cream
+           hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply inline-block border border-white/60 text-white font-label text-xs tracking-[0.2em] uppercase
+           px-8 py-4 transition-all duration-300 ease-luxury hover:bg-white/10 hover:border-white;
+  }
+}

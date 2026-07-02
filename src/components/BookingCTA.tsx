@@ -49,7 +49,7 @@ export default function BookingCTA() {
 
         {/* Availability note */}
         <p className="font-sans text-white/70 text-base md:text-lg">
-          Available year-round &middot; From IDR&nbsp;2,400,000&nbsp;/&nbsp;night
+          Available year-round &middot; From IDR&nbsp;1,500,000&nbsp;/&nbsp;night
         </p>
 
         {/* CTA buttons */}
@@ -63,7 +63,7 @@ export default function BookingCTA() {
             Book via WhatsApp
           </a>
           <a
-            href="mailto:villasattvika@gmail.com"
+            href="mailto:villasattvikaumalas@gmail.com"
             className="btn-ghost"
           >
             Enquire Directly

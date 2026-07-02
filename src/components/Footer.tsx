@@ -92,10 +92,10 @@ export default function Footer() {
                 Bali 80361, Indonesia
               </p>
               <a
-                href="mailto:villasattvika@gmail.com"
+                href="mailto:villasattvikaumalas@gmail.com"
                 className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-300"
               >
-                villasattvika@gmail.com
+                villasattvikaumalas@gmail.com
               </a>
               <a
                 href="https://wa.me/628131111099"

@@ -139,21 +139,19 @@ export default function About() {
 
             <div className="flex flex-col gap-5">
               <p className="section-body">
-                Located in the quiet lanes of Kerobokan Kelod, Villa Sattvika is a peaceful
+                Located in the lanes of Bumbak in Umalas, Villa Sattvika is a peaceful
                 retreat spot just minutes from Batu Belig Beach, Seminyak&apos;s dining scene,
                 and Canggu&apos;s surf breaks. The villa takes you back to the simple things
-                in life. A morning swim, a sunset drink, and nature itself as your backdrop
+                in life. A morning dip in the pool, an evening drink, and nature itself as your background
               </p>
               <p className="section-body">
                 The name <em className="font-display not-italic text-forest">Sattvika</em> is
                 drawn from Sanskrit, describing all that is pure, wholesome, and
-                in harmony with the natural world. It is a philosophy woven
-                through every detail of this villa — from the native planting in
-                the garden to the unhurried mornings on the terrace.
+                in harmony with the natural world.
               </p>
               <p className="section-body">
-                Within the private walled compound you will find a shimmering
-                outdoor pool, open-plan living spaces that spill onto a teak
+                Within the private walls you will find a shimmering
+                outdoor plunge pool, open-plan living spaces that spill onto a teak
                 deck, and two bedrooms that offer complete quiet and rest.
                 This is not simply a place to stay — it is a place to return to
                 yourself.
@@ -164,7 +162,7 @@ export default function About() {
             <div className="flex gap-10 pt-2 border-t border-cream-deep">
               <StatItem label="Established" value="Est. 2019" />
               <div className="w-px bg-cream-deep" aria-hidden="true" />
-              <StatItem label="Location" value="Kerobokan Kelod, Bali" />
+              <StatItem label="Location" value="Bumbak, Umalas, Bali" />
             </div>
 
             <div className="pt-2">

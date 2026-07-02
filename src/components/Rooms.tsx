@@ -36,7 +36,7 @@ const rooms: Room[] = [
   {
     title: "The Garden Suite",
     description:
-      "A quiet bedroom finished in slatted timber, opening onto its own private garden corner.",
+      "A spacious bedroom equipped with a smart TV, opening onto its own private garden corner.",
     images: [
       { src: "/rooms/bedroom-garden-1.jpg", alt: "Garden Suite bedroom with slatted timber wall and TV" },
       { src: "/rooms/bedroom-garden-3.jpg", alt: "Garden Suite bedroom with pool view through sliding doors" },
@@ -69,7 +69,7 @@ function RoomCarousel({ room }: { room: Room }) {
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="relative aspect-[4/3] overflow-hidden group">
+      <div className="relative aspect-[4/3] overflow-hidden group transition-transform duration-700 ease-luxury hover:scale-[1.06] hover:z-20">
         {room.images.map((image, i) => (
           <Image
             key={image.src}
@@ -142,7 +142,7 @@ export default function Rooms() {
       <div className="max-w-6xl mx-auto px-10 lg:px-20">
         <div className="text-center mb-8">
           <p className="font-label text-xs tracking-[0.3em] uppercase text-terracotta font-semibold mb-4">
-            Explore
+            Explore Our
           </p>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-normal text-white leading-tight">
             Facilities & Rooms

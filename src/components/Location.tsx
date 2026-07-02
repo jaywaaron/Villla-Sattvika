@@ -100,11 +100,11 @@ export default function Location() {
             <p className="section-label mb-4">Find Us</p>
 
             <h2 className="section-title mb-7 whitespace-pre-line">
-              {`Tucked Into the\nHeart of Bali`}
+              {`Located in the\nHeart of Bali`}
             </h2>
 
             <p className="section-body mb-10 max-w-lg">
-              Villa Sattvika sits on a quiet gang in Kerobokan Kelod — moments
+              Villa Sattvika sits on a quiet gang in Umalas — moments
               from Batu Belig Beach and the best of Seminyak, yet set back
               enough to feel worlds away from the crowd.
             </p>
@@ -131,7 +131,7 @@ export default function Location() {
             <p className="font-label text-xs tracking-[0.12em] text-charcoal-light mb-8 leading-relaxed">
               Jl. Bumbak Gg. Candra 73 No.18
               <br />
-              Kerobokan Kelod, Kec. Kuta Utara
+              Umalas, Kec. Kuta Utara
               <br />
               Kabupaten Badung, Bali 80361
             </p>
@@ -152,7 +152,7 @@ export default function Location() {
               {/* Aerial image */}
               <Image
                 src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&h=700&fit=crop&auto=format&q=85"
-                alt="Aerial view of Bali landscape near Kerobokan"
+                alt="Aerial view of Bali landscape near Umalas"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -184,7 +184,7 @@ export default function Location() {
                   Villa Sattvika
                 </p>
                 <p className="font-sans text-xs text-charcoal-light leading-none truncate">
-                  Kerobokan, Bali
+                  Umalas, Bali
                 </p>
               </div>
             </div>

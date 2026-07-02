@@ -144,7 +144,7 @@ const amenities: AmenityItem[] = [
     id: "bedrooms",
     title: "2 Spacious Bedrooms",
     description:
-      "Air-conditioned bedrooms, each having its own bathroom",
+      "Each room comes with aesthetic king-size beds, with ensuite bathroom",
     icon: <BedroomIcon />,
   },
   {
@@ -167,7 +167,7 @@ interface AmenityCardProps {
 
 function AmenityCard({ item }: AmenityCardProps) {
   return (
-    <div className="group flex flex-col gap-5 p-8 cursor-default">
+    <div className="group flex flex-col gap-5 p-8 cursor-default transition-transform duration-300 ease-luxury hover:scale-105 hover:z-10">
       <div className="transition-transform duration-300 ease-luxury group-hover:-translate-y-0.5">
         {item.icon}
       </div>

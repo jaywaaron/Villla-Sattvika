@@ -12,20 +12,6 @@ function InstagramIcon() {
   );
 }
 
-function FacebookIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      className="w-5 h-5"
-      aria-hidden="true"
-    >
-      <path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.514c-1.491 0-1.956.931-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
-    </svg>
-  );
-}
-
 const exploreLinks = [
   { label: "The Villa", href: "#villa" },
   { label: "Amenities", href: "#amenities" },
@@ -56,29 +42,20 @@ export default function Footer() {
               The Villa
             </h3>
             <p className="font-sans text-sm text-white/70 leading-relaxed">
-              A secluded two-bedroom sanctuary in the heart of Umalas, Kerobokan.
+              A secluded two-bedroom sanctuary in the heart of Umalas.
               Private pool, hot tub, and lush rice field views — Bali as it was
               always meant to feel.
             </p>
             {/* Social links */}
             <div className="flex items-center gap-4 pt-1">
               <a
-                href="https://www.instagram.com/villasattvika"
+                href="https://www.instagram.com/villasattvikabali/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Villa Sattvika on Instagram"
                 className="text-white hover:text-terracotta transition-colors duration-300"
               >
                 <InstagramIcon />
-              </a>
-              <a
-                href="https://www.facebook.com/villasattvika"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Villa Sattvika on Facebook"
-                className="text-white hover:text-terracotta transition-colors duration-300"
-              >
-                <FacebookIcon />
               </a>
             </div>
           </div>
@@ -111,7 +88,7 @@ export default function Footer() {
             </h3>
             <address className="not-italic flex flex-col gap-3">
               <p className="font-sans text-sm text-white/70 leading-relaxed">
-                Umalas, Kerobokan,<br />
+                Umalas,<br />
                 Bali 80361, Indonesia
               </p>
               <a
@@ -121,20 +98,12 @@ export default function Footer() {
                 villasattvika@gmail.com
               </a>
               <a
-                href="https://wa.me/628120000000"
+                href="https://wa.me/628131111099"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-300"
               >
-                WhatsApp: +62 812 0000 0000
-              </a>
-              <a
-                href="https://www.booking.com/hotel/id/villa-sattvika.html"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-sm text-terracotta hover:text-terracotta-light transition-colors duration-300"
-              >
-                Book on Booking.com →
+                WhatsApp: +62 813-1111-099
               </a>
             </address>
           </div>

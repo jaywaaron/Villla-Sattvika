@@ -67,7 +67,7 @@ export default function Navbar() {
               <li key={link.label}>
                 <button
                   onClick={() => handleNavClick(link.href)}
-                  className={`font-label text-xs tracking-[0.18em] uppercase transition-colors duration-300 hover:opacity-60 ${
+                  className={`relative font-label text-xs tracking-[0.18em] uppercase transition-colors duration-300 hover:opacity-60 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-current after:transition-all after:duration-300 hover:after:w-full ${
                     scrolled ? "text-charcoal" : "text-white/90"
                   }`}
                 >
@@ -77,7 +77,7 @@ export default function Navbar() {
             ))}
             <li>
               <a
-                href="https://www.booking.com/hotel/id/villa-sattvika.html"
+                href="https://wa.me/628131111099"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`font-label text-xs tracking-[0.18em] uppercase px-5 py-2.5 rounded-full border transition-all duration-300 ${
@@ -143,7 +143,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="https://www.booking.com/hotel/id/villa-sattvika.html"
+              href="https://wa.me/628131111099"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
@@ -159,7 +159,7 @@ export default function Navbar() {
 
         {/* Decorative label at bottom */}
         <p className="absolute bottom-10 font-label text-xs tracking-[0.3em] uppercase text-white/30">
-          Kerobokan · Bali
+          Umalas · Bali
         </p>
       </div>
     </>

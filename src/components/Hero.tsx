@@ -23,12 +23,12 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[56rem] flex flex-col overflow-hidden">
+    <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
           src={HERO_IMAGE}
-          alt="Villa Sattvika — aerial view of the private pool villa surrounded by tropical gardens in Kerobokan, Bali"
+          alt="Villa Sattvika — aerial view of the private pool villa surrounded by tropical gardens in Umalas, Bali"
           fill
           priority
           unoptimized
@@ -64,7 +64,7 @@ export default function Hero() {
             />
           </svg>
           <span className="font-label text-xs tracking-[0.3em] uppercase text-white font-semibold">
-            Kerobokan · Bali
+            Umalas · Bali
           </span>
         </div>
 
@@ -86,7 +86,7 @@ export default function Hero() {
             Explore the Villa
           </button>
           <a
-            href="https://www.booking.com/hotel/id/villa-sattvika.html"
+            href="https://wa.me/628131111099"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"

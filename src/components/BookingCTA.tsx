@@ -55,12 +55,12 @@ export default function BookingCTA() {
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
           <a
-            href="https://www.booking.com/hotel/id/villa-sattvika.html"
+            href="https://wa.me/628131111099"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"
           >
-            Book on Booking.com
+            Book via WhatsApp
           </a>
           <a
             href="mailto:villasattvika@gmail.com"
@@ -72,14 +72,14 @@ export default function BookingCTA() {
 
         {/* WhatsApp link */}
         <a
-          href="https://wa.me/628120000000"
+          href="https://wa.me/628131111099"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white/50 hover:text-white/90 font-sans text-sm transition-colors duration-300 mt-1"
           aria-label="Contact us on WhatsApp"
         >
           <WhatsAppIcon />
-          <span>+62 812 0000 0000</span>
+          <span>+62 813-1111-099</span>
         </a>
       </div>
     </section>

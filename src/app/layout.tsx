@@ -14,7 +14,6 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   variable: "--font-inter",
-  
   display: "swap",
 });
 
@@ -28,19 +27,19 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Villa Sattvika — Private Sanctuary in Bali",
   description:
-    "A secluded 2-bedroom private villa in Kerobokan, Bali. Includes a private pool and a view of the rice fields. The pure life awaits.",
+    "A secluded 2-bedroom private villa in Umalas, Bali. Includes a private pool and a view of the rice fields. The pure life awaits.",
   keywords: [
     "Villa Sattvika",
     "Bali villa",
-    "Kerobokan villa",
-    "private pool villa Bali",
     "Umalas villa",
+    "private pool villa Bali",
+    "Umalas villa Bali",
     "luxury villa Bali",
   ],
   openGraph: {
     title: "Villa Sattvika — Private Sanctuary in Bali",
     description:
-      "Secluded 2-bedroom private villa with a private pool and rice field views in Kerobokan, Bali.",
+      "Secluded 2-bedroom private villa with a private pool and rice field views in Umalas, Bali.",
     type: "website",
     locale: "en_US",
   },

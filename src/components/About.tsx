@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 interface StatItemProps {
   label: string;
@@ -166,7 +167,11 @@ export default function About() {
             </div>
 
             <div className="pt-2">
-              <Link href="#amenities" className="btn-outline">
+              <Link
+                href="#amenities"
+                className="btn-outline"
+                onClick={() => posthog.capture("discover_more_clicked", { source: "about" })}
+              >
                 Discover More
               </Link>
             </div>

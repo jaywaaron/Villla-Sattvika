@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import posthog from "posthog-js";
 
 const HERO_IMAGE = "/rooms/exterior-hero.jpg";
 
@@ -12,6 +13,7 @@ const stats = [
 
 export default function Hero() {
   const handleExploreClick = () => {
+    posthog.capture("explore_villa_clicked", { source: "hero" });
     const el = document.querySelector("#villa");
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
@@ -90,6 +92,7 @@ export default function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"
+            onClick={() => posthog.capture("book_now_clicked", { source: "hero" })}
           >
             Book Your Stay
           </a>

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const navLinks = [
   { label: "Villa", href: "#villa" },
@@ -80,6 +81,7 @@ export default function Navbar() {
                 href="https://wa.me/628131111099"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => posthog.capture("nav_book_now_clicked", { source: "desktop_nav" })}
                 className={`font-label text-xs tracking-[0.18em] uppercase px-5 py-2.5 rounded-full border transition-all duration-300 ${
                   scrolled
                     ? "border-forest text-forest hover:bg-forest hover:text-cream"
@@ -146,7 +148,7 @@ export default function Navbar() {
               href="https://wa.me/628131111099"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setMenuOpen(false)}
+              onClick={() => { setMenuOpen(false); posthog.capture("nav_book_now_clicked", { source: "mobile_nav" }); }}
               style={{ transitionDelay: menuOpen ? "340ms" : "0ms" }}
               className={`inline-block mt-4 font-label text-sm tracking-[0.25em] uppercase border border-white/50 text-white px-8 py-4 hover:bg-white/10 hover:border-white transition-all duration-300 ${
                 menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"

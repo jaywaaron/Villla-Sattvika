@@ -1,3 +1,7 @@
+"use client";
+
+import posthog from "posthog-js";
+
 function InstagramIcon() {
   return (
     <svg
@@ -54,6 +58,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Villa Sattvika on Instagram"
                 className="text-white hover:text-terracotta transition-colors duration-300"
+                onClick={() => posthog.capture("footer_instagram_clicked")}
               >
                 <InstagramIcon />
               </a>
@@ -102,6 +107,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans text-sm text-white/70 hover:text-white transition-colors duration-300"
+                onClick={() => posthog.capture("footer_whatsapp_clicked")}
               >
                 WhatsApp: +62 813-1111-099
               </a>

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import posthog from "posthog-js";
 
 interface Testimonial {
   quote: string;
@@ -65,11 +66,15 @@ export default function Testimonials() {
   const [index, setIndex] = useState(0);
 
   function prev() {
-    setIndex((i) => (i - 1 + testimonials.length) % testimonials.length);
+    const prevIndex = (index - 1 + testimonials.length) % testimonials.length;
+    setIndex(prevIndex);
+    posthog.capture("testimonial_navigated", { direction: "prev", testimonial_index: prevIndex });
   }
 
   function next() {
-    setIndex((i) => (i + 1) % testimonials.length);
+    const nextIndex = (index + 1) % testimonials.length;
+    setIndex(nextIndex);
+    posthog.capture("testimonial_navigated", { direction: "next", testimonial_index: nextIndex });
   }
 
   const t = testimonials[index];
@@ -134,7 +139,7 @@ export default function Testimonials() {
                 <button
                   key={i}
                   type="button"
-                  onClick={() => setIndex(i)}
+                  onClick={() => { setIndex(i); posthog.capture("testimonial_navigated", { direction: "dot", testimonial_index: i }); }}
                   aria-label={`Go to review ${i + 1}`}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
                     i === index ? "w-6 bg-terracotta" : "w-1.5 bg-charcoal/20"

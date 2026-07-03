@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import posthog from "posthog-js";
 
 function WhatsAppIcon() {
   return (
@@ -59,12 +62,14 @@ export default function BookingCTA() {
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"
+            onClick={() => posthog.capture("booking_whatsapp_clicked", { source: "booking_cta" })}
           >
             Book via WhatsApp
           </a>
           <a
             href="mailto:villasattvikaumalas@gmail.com"
             className="btn-ghost"
+            onClick={() => posthog.capture("booking_email_enquiry_clicked", { source: "booking_cta" })}
           >
             Enquire Directly
           </a>
@@ -77,6 +82,7 @@ export default function BookingCTA() {
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-white/50 hover:text-white/90 font-sans text-sm transition-colors duration-300 mt-1"
           aria-label="Contact us on WhatsApp"
+          onClick={() => posthog.capture("booking_whatsapp_clicked", { source: "booking_cta_phone" })}
         >
           <WhatsAppIcon />
           <span>+62 813-1111-099</span>

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import posthog from "posthog-js";
 
 const distances = [
   {
@@ -141,6 +144,7 @@ export default function Location() {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
+              onClick={() => posthog.capture("get_directions_clicked")}
             >
               Get Directions
             </Link>

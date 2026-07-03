@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import posthog from "posthog-js";
 
 interface RoomImage {
   src: string;
@@ -60,11 +61,15 @@ function RoomCarousel({ room }: { room: Room }) {
   const hasMultiple = room.images.length > 1;
 
   function next() {
-    setIndex((i) => (i + 1) % room.images.length);
+    const nextIndex = (index + 1) % room.images.length;
+    setIndex(nextIndex);
+    posthog.capture("room_photo_navigated", { room_title: room.title, photo_index: nextIndex, direction: "next" });
   }
 
   function prev() {
-    setIndex((i) => (i - 1 + room.images.length) % room.images.length);
+    const prevIndex = (index - 1 + room.images.length) % room.images.length;
+    setIndex(prevIndex);
+    posthog.capture("room_photo_navigated", { room_title: room.title, photo_index: prevIndex, direction: "prev" });
   }
 
   return (
@@ -112,7 +117,7 @@ function RoomCarousel({ room }: { room: Room }) {
                 <button
                   key={image.src}
                   type="button"
-                  onClick={() => setIndex(i)}
+                  onClick={() => { setIndex(i); posthog.capture("room_photo_navigated", { room_title: room.title, photo_index: i, direction: "dot" }); }}
                   aria-label={`Show photo ${i + 1} of ${room.title}`}
                   className={`h-1.5 rounded-full transition-all duration-300 ${
                     i === index ? "w-5 bg-white" : "w-1.5 bg-white/40"

@@ -33,7 +33,6 @@ export default function Hero() {
           alt="Villa Sattvika — aerial view of the private pool villa surrounded by tropical gardens in Umalas, Bali"
           fill
           priority
-          unoptimized
           sizes="100vw"
           className="object-cover object-center"
         />

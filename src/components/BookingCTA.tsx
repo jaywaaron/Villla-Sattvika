@@ -26,7 +26,6 @@ export default function BookingCTA() {
         src="/rooms/booking-bg.jpg"
         alt="Villa Sattvika living area with pool view"
         fill
-        unoptimized
         sizes="100vw"
         className="object-cover"
         priority={false}

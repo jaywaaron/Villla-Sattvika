@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import posthog from "posthog-js";
+import FadeIn from "./FadeIn";
 
 const distances = [
   {
@@ -96,7 +97,7 @@ const distances = [
 export default function Location() {
   return (
     <section id="location" className="bg-cream py-24 lg:py-32">
-      <div className="max-w-6xl mx-auto px-10 lg:px-20">
+      <FadeIn className="max-w-6xl mx-auto px-10 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left Column — Text Content */}
           <div>
@@ -155,8 +156,8 @@ export default function Location() {
             <div className="relative overflow-hidden aspect-[4/3] lg:aspect-[5/4]">
               {/* Aerial image */}
               <Image
-                src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&h=700&fit=crop&auto=format&q=85"
-                alt="Aerial view of Bali landscape near Umalas"
+                src="/rooms/gate.jpg"
+                alt="Villa Sattvika's front gate and entrance in Umalas, Bali"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
@@ -194,7 +195,7 @@ export default function Location() {
             </div>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

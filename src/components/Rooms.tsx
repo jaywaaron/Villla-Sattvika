@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import posthog from "posthog-js";
+import FadeIn from "./FadeIn";
 
 interface RoomImage {
   src: string;
@@ -144,7 +145,7 @@ function RoomCarousel({ room }: { room: Room }) {
 export default function Rooms() {
   return (
     <section id="rooms" className="bg-charcoal-dark py-24">
-      <div className="max-w-6xl mx-auto px-10 lg:px-20">
+      <FadeIn className="max-w-6xl mx-auto px-10 lg:px-20">
         <div className="text-center mb-8">
           <p className="font-label text-xs tracking-[0.3em] uppercase text-terracotta font-semibold mb-4">
             Explore Our
@@ -159,7 +160,7 @@ export default function Rooms() {
             <RoomCarousel key={room.title} room={room} />
           ))}
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import posthog from "posthog-js";
+import FadeIn from "./FadeIn";
 
 interface StatItemProps {
   label: string;
@@ -127,7 +128,7 @@ export default function About() {
       id="villa"
       className="bg-cream-warm py-24 lg:py-32 overflow-hidden"
     >
-      <div className="max-w-6xl mx-auto px-10 lg:px-20">
+      <FadeIn className="max-w-6xl mx-auto px-10 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* Left Column — Text */}
           <div className="flex flex-col gap-8 lg:pr-8">
@@ -180,7 +181,7 @@ export default function About() {
           {/* Right Column — Three stacked auto-advancing photo slides */}
           <AboutGallery />
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

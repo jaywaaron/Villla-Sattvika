@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import FadeIn from "./FadeIn";
 
 interface AmenityItem {
   id: string;
@@ -186,7 +187,7 @@ function AmenityCard({ item }: AmenityCardProps) {
 export default function Amenities() {
   return (
     <section id="amenities" className="bg-white py-24 lg:py-32">
-      <div className="max-w-6xl mx-auto px-10 lg:px-20">
+      <FadeIn className="max-w-6xl mx-auto px-10 lg:px-20">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center gap-5 mb-16 lg:mb-20 max-w-2xl mx-auto">
           <span className="section-label text-4xl tracking-[0.3em] bg-terracotta text-white px-6 py-3 rounded-sm">What We Offer</span>
@@ -198,7 +199,7 @@ export default function Amenities() {
             <AmenityCard key={item.id} item={item} />
           ))}
         </div>
-      </div>
+      </FadeIn>
     </section>  
   );
 }

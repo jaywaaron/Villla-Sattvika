@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import posthog from "posthog-js";
+import FadeIn from "./FadeIn";
 
 interface Testimonial {
   quote: string;
@@ -81,7 +82,7 @@ export default function Testimonials() {
 
   return (
     <section id="testimonials" className="bg-cream-warm py-24">
-      <div className="max-w-6xl mx-auto px-10 lg:px-20">
+      <FadeIn className="max-w-6xl mx-auto px-10 lg:px-20">
         {/* Header */}
         <div className="flex flex-col items-center gap-4 text-center mb-16">
           <span className="section-label">Guest Stories</span>
@@ -158,7 +159,7 @@ export default function Testimonials() {
             </button>
           </div>
         </div>
-      </div>
+      </FadeIn>
     </section>
   );
 }

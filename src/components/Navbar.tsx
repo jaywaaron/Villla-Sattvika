@@ -77,15 +77,15 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a
-                href="https://wa.me/628131111099"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => posthog.capture("nav_book_now_clicked", { source: "desktop_nav" })}
+              <button
+                onClick={() => {
+                  handleNavClick("#book");
+                  posthog.capture("nav_book_now_clicked", { source: "desktop_nav" });
+                }}
                 className="font-label text-xs tracking-[0.18em] uppercase px-5 py-2.5 rounded-full bg-terracotta text-white transition-all duration-300 hover:bg-terracotta-light"
               >
                 Book Now
-              </a>
+              </button>
             </li>
           </ul>
 
@@ -140,18 +140,18 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a
-              href="https://wa.me/628131111099"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => { setMenuOpen(false); posthog.capture("nav_book_now_clicked", { source: "mobile_nav" }); }}
+            <button
+              onClick={() => {
+                handleNavClick("#book");
+                posthog.capture("nav_book_now_clicked", { source: "mobile_nav" });
+              }}
               style={{ transitionDelay: menuOpen ? "340ms" : "0ms" }}
               className={`inline-block mt-4 font-label text-sm tracking-[0.25em] uppercase bg-terracotta text-white px-8 py-4 hover:bg-terracotta-light transition-all duration-300 ${
                 menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
               Book Now
-            </a>
+            </button>
           </li>
         </ul>
 

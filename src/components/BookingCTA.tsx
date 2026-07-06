@@ -66,6 +66,15 @@ export default function BookingCTA() {
             Book via WhatsApp
           </a>
           <a
+            href="https://www.airbnb.co.id/rooms/1722312584940038088"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost"
+            onClick={() => posthog.capture("booking_airbnb_clicked", { source: "booking_cta" })}
+          >
+            Book on Airbnb
+          </a>
+          <a
             href="mailto:villasattvikaumalas@gmail.com"
             className="btn-ghost"
             onClick={() => posthog.capture("booking_email_enquiry_clicked", { source: "booking_cta" })}

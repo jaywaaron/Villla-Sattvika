@@ -167,7 +167,7 @@ interface AmenityCardProps {
 
 function AmenityCard({ item }: AmenityCardProps) {
   return (
-    <div className="group flex flex-col gap-5 p-8 cursor-default transition-transform duration-300 ease-luxury hover:scale-105 hover:z-10">
+    <div className="group flex flex-col gap-5 p-8 cursor-default border border-cream-deep rounded-none transition-transform duration-300 ease-luxury hover:scale-105 hover:z-10">
       <div className="transition-transform duration-300 ease-luxury group-hover:-translate-y-0.5">
         {item.icon}
       </div>
@@ -199,6 +199,6 @@ export default function Amenities() {
           ))}
         </div>
       </div>
-    </section>
+    </section>  
   );
 }

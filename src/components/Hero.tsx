@@ -78,19 +78,22 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="font-sans text-base md:text-lg text-white/80 max-w-md leading-relaxed mb-10 animate-fade-up [animation-delay:150ms]">
-          A 2-bedroom villa with a private pool &amp; rice field views in between 
+          2-bedroom villa with a private pool &amp; rice field views in between
         </p>
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-up [animation-delay:300ms]">
-          <button onClick={handleExploreClick} className="btn-ghost">
+          <button
+            onClick={handleExploreClick}
+            className="inline-block bg-forest text-cream font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-forest-light hover:-translate-y-0.5"
+          >
             Explore the Villa
           </button>
           <a
             href="https://wa.me/628131111099"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-ghost"
+            className="inline-block bg-terracotta text-white font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-terracotta-light hover:-translate-y-0.5 shadow-lg shadow-terracotta/30"
             onClick={() => posthog.capture("book_now_clicked", { source: "hero" })}
           >
             Book Your Stay
@@ -99,7 +102,7 @@ export default function Hero() {
             href="https://www.google.com/maps/search/?api=1&query=Villa+Sattvika+Bali"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-ghost"
+            className="inline-block bg-charcoal-dark/70 backdrop-blur-sm text-white font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-charcoal-dark hover:-translate-y-0.5"
           >
             Location
           </a>

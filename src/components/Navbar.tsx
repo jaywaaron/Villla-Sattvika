@@ -82,11 +82,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => posthog.capture("nav_book_now_clicked", { source: "desktop_nav" })}
-                className={`font-label text-xs tracking-[0.18em] uppercase px-5 py-2.5 rounded-full border transition-all duration-300 ${
-                  scrolled
-                    ? "border-forest text-forest hover:bg-forest hover:text-cream"
-                    : "border-white/70 text-white hover:bg-white/10 hover:border-white"
-                }`}
+                className="font-label text-xs tracking-[0.18em] uppercase px-5 py-2.5 rounded-full bg-terracotta text-white transition-all duration-300 hover:bg-terracotta-light"
               >
                 Book Now
               </a>
@@ -150,7 +146,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
               onClick={() => { setMenuOpen(false); posthog.capture("nav_book_now_clicked", { source: "mobile_nav" }); }}
               style={{ transitionDelay: menuOpen ? "340ms" : "0ms" }}
-              className={`inline-block mt-4 font-label text-sm tracking-[0.25em] uppercase border border-white/50 text-white px-8 py-4 hover:bg-white/10 hover:border-white transition-all duration-300 ${
+              className={`inline-block mt-4 font-label text-sm tracking-[0.25em] uppercase bg-terracotta text-white px-8 py-4 hover:bg-terracotta-light transition-all duration-300 ${
                 menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >

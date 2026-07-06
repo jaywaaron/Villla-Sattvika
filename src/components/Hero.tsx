@@ -85,7 +85,7 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row items-center gap-4 animate-fade-up [animation-delay:300ms]">
           <button
             onClick={handleExploreClick}
-            className="inline-block bg-forest text-cream font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-forest-light hover:-translate-y-0.5"
+            className="inline-block bg-terracotta text-white font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-terracotta-light hover:-translate-y-0.5 shadow-lg shadow-terracotta/30"
           >
             Explore the Villa
           </button>
@@ -102,7 +102,7 @@ export default function Hero() {
             href="https://www.google.com/maps/search/?api=1&query=Villa+Sattvika+Bali"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-charcoal-dark/70 backdrop-blur-sm text-white font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-charcoal-dark hover:-translate-y-0.5"
+            className="inline-block bg-terracotta text-white font-label text-xs tracking-[0.2em] uppercase px-8 py-4 transition-all duration-300 ease-luxury hover:bg-terracotta-light hover:-translate-y-0.5 shadow-lg shadow-terracotta/30"
           >
             Location
           </a>

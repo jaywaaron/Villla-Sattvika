@@ -167,7 +167,7 @@ interface AmenityCardProps {
 
 function AmenityCard({ item }: AmenityCardProps) {
   return (
-    <div className="group flex flex-col gap-5 p-8 cursor-default border border-cream-deep rounded-none transition-transform duration-300 ease-luxury hover:scale-105 hover:z-10">
+    <div className="group flex flex-col gap-5 p-8 cursor-default bg-white transition-transform duration-300 ease-luxury hover:scale-105 hover:z-10">
       <div className="transition-transform duration-300 ease-luxury group-hover:-translate-y-0.5">
         {item.icon}
       </div>
@@ -193,10 +193,11 @@ export default function Amenities() {
         </div>
 
         {/* Amenity Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-cream-deep border border-cream-deep">
           {amenities.map((item) => (
             <AmenityCard key={item.id} item={item} />
           ))}
+          <div className="hidden sm:block bg-white" aria-hidden="true" />
         </div>
       </div>
     </section>  

@@ -14,6 +14,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 80%;
   }
 
   body {
@@ -37,7 +38,7 @@
     @apply bg-sage rounded-full;
   }
 }
-
+  x`  
 @layer components {
   .section-label {
     @apply font-label text-xs tracking-[0.3em] uppercase text-terracotta font-semibold;

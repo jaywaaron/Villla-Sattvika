@@ -51,7 +51,7 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <nav className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-16 md:h-20">
+        <nav className="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between h-12 md:h-[3.75rem]">
           {/* Logo */}
           <Link
             href="/"
